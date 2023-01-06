@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/08646af1d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class ="container">
+        <nav>
+            <img src="images/letter-h.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!--<i class="fas fa-times" on click="closemenu()"></i>-->
+            </ul>
+           <!--- <i class="fas fa-bars" on click="openmenu()"></i>-->
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Haifa</span>,<br></h1>
+            <p>Aspiring Software Developer</p>
+            <a href="Images/HaifaBesrour_Resume2.0.pdf" download class="btn">Download Resume</a>
+        </div>
+    </div>
+</div>
+
+<!---------------about-------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1"> 
+                <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> 
+                </script>
+                <script src="TagCloud.js"></script> 
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About me </h1>
+                <p>Highly motivated software engineering graduate with a passion for mathematics. Detail-oriented with experience in software troubleshooting, data structures, and project management. Looking to gain hands-on experience in a professional environment where I can build software solutions for everyday problems.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                    <p class="tab-links "onclick="opentab('Experience')">experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                    <li><span>Web development</span><br>including HTML/CSS/SCSS/Typescript/Javascript and frameworks such as Angular, React.JS, and JQuery</li>
+                    <li><span>Database creation and management</span><br>including experience with Oracle, SQL Server, Postgresql, and MangoDB</li>
+                    <li><span>Project management</span><br>including experience with MS Projects, Jira, Confluence, and UML modeling</li>
+                    <li><span>Mobile app development</span><br>experience with Android Studio and Unity</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Sep 2022 Current</span><br>University of Ottawa - Teaching assistant</li>
+                        <li><span>Mar 2022 - Sep 2022</span><br>Government of Canada - QA Analyst </li>
+                        <li><span>Oct 2021 - Feb 2022</span><br>University of Ottawa - Web developer</li>
+                        <li><span>Sep 2020 - Sep 2021</span><br>Government of Canada - IT Student Intern</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2019 - 2022</span><br>University of Ottawa</li>
+                        <li>BASc, Software Engineering (CO-OP)</li>
+                        <li>Cum Laude.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------Portfolio-------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/capstone.png">
+                <div class="layer">
+                    <h3>Capstone Project: uOttawa Live Tour</h3>
+                    <p>A navigation app that helps students explore the campus by taking them on an AR-guided tour. The app uses camera and location data to identify buildings, provide turn-by-turn directions, as well as highlight points of interest. The app is created on Unity and coded with C#, uses firebase as a dynamic database, Google’s cloud anchors and AR core for the AR component, and is available for both iOS and Android devices.</p>
+                    <a href="https://github.com/haifabes/uOttawa-Live-Tour"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/uml.jpg">
+                <div class="layer">
+                    <h3>Sports leadearboard Android app</h3>
+                    <p>A project done during for the class SEG2505 intro to software engineering comprehensive Android app that allows users to track their favorite sports and players, view live scores and stats, and access personalized recommendations. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/galleria.png">
+                <div class="layer">
+                    <h3>School art gallery website</h3>
+                    <p>A website meant to showcase the talent and creativity of students from uOttawa.</p>
+                    <a href="https://github.com/haifabes/haifabes.github.io"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------contact------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>I’m interested in full time opportunities especially ambitious or large projects that provide creative software solutions.
+                </p>
+                <p><i class="fa-solid fa-envelope"></i>haifabesrour@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+1(873)354-4373</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/haifa-besrour-09b110197/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/haifabes"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="message" rows="10" placeholder="Your message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyrigh"></div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right ="0";
+    }
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+    }
+</script>
+
+</body>
+</html>
