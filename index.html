@@ -99,7 +99,7 @@
                 </div>
             </div>
             <div class="work">
-                <img src="Images/galleria.">
+                <img src="Images/galleria.png">
                 <div class="layer">
                     <h3>School art gallery website</h3>
                     <p>A website meant to showcase the talent and creativity of students from uOttawa.</p>
@@ -126,12 +126,13 @@
                 </div>
             </div>
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your email" required>
-                    <textarea name="message" rows="10" placeholder="Your message" required></textarea>
+                    <textarea name="Message" rows="10" placeholder="Your message" required></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <span id="msg"></span>
 
             </div>
         </div>
@@ -165,6 +166,27 @@
     function closemenu(){
         sidemenu.style.right= "-200px";
     }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw5mSpxKd4ZIgrCqUV3c855K_GfjpdP5IeJYTRKfQehfixh12ywczFcZdDodwLz9gPe/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Sent!"
+            setTimeout(function(){
+                msg.innerHTML=""
+                },4000)
+            form.reset()
+
+        })
+
+        .catch(error => console.error('Error!', error.message))
+    })
 </script>
 
 </body>
