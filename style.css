@@ -71,8 +71,9 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span {
-    color: #ff004f;
-    text-shadow:  -4.25px 0px #fff,2px 2.5px 45px #51e1e1;
+    color: #fff;
+    font-weight: 520;
+    text-shadow:  -3.25px 0px #ff004f, 3.25px 0px #51e1e1,2px 2.5px 45px #51e1e1;
     transition: transform 0.7s;
 }
 h1 :hover span{
